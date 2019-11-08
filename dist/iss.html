@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ISS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      a:visited {
+        color: orangered;
+      }
+      a:hover {
+        color: blue;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 180px; /* Should be removed. Only for demonstration */
+      }
+      .column1 {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 500px; /* Should be removed. Only for demonstration */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+      .responsive {
+        width: 100%;
+        height: auto;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        grid-gap: 2px;
+        background: white;
+        padding: 10px;
+        height: 400px;
+      }
+
+      .parent > div {
+        background-color: white;
+        text-align: center;
+        width: 100% auto;
+        height: 100%;
+        font-size: 30px;
+      }
+      .item1 > img {
+        width: 55%;
+
+        margin-left: 90px;
+        align-items: center;
+      }
+      .item1 > img:hover {
+        width: 55%;
+        margin-left: 90px;
+        align-items: center;
+      }
+
+      .parent2 {
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        grid-gap: 2px;
+        background: white;
+        padding: 10px;
+        height: 400px;
+      }
+
+      .parent2 > div {
+        background-color: white;
+        text-align: center;
+        width: 100% auto;
+        height: 100%;
+        font-size: 30px;
+      }
+      .item4 > img {
+        width: 73%;
+        margin-right: 90px;
+        align-items: center;
+      }
+      .item4 > img:hover {
+        width: 73%;
+        margin-right: 90px;
+        align-items: center;
+      }
+      .pfont {
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 17px;
+        letter-spacing: 0.8px;
+        word-spacing: -3px;
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none solid rgb(68, 68, 68);
+        font-style: normal;
+        font-variant: normal;
+        text-transform: capitalize;
+      }
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <body>
+      <div class="container">
+        <!--     nav bar -->
+        <div class="navbar">
+          <ul style="padding-left: 0px;">
+            <li class="logo"><a href="#"> spacescience.ml </a></li>
+
+            <section class="div_navbar_items">
+              <li class="navbar_items"><a href="./index1.htmls"> Home </a></li>
+              <li class="navbar_items">
+                <a href="./abouts.html"> About us </a>
+              </li>
+              <li class="navbar_items"><a href="#projects"> projects </a></li>
+              <li class="navbar_items">
+                <a href="./ask/formpage.html"> Contact us </a>
+              </li>
+            </section>
+
+            <li class="icon">
+              <a href="#" onclick="navBarFunction()"> &#9776;</a>
+            </li>
+          </ul>
+        </div>
+        <!--         closing navbar  -->
+        <div class="intro"></div>
+        <!--       closing container div -->
+      </div>
+      <br />
+      <br />
+      <div class="row">
+        <div class="column">
+          <br /><br /><br /><br />
+          <h2
+            style="color: grey; margin-left: 30px; font-family: monospace; font-size: 35px;"
+          >
+            International Space Station
+          </h2>
+          <BR />
+        </div>
+
+        <div class="column1">
+          <img src="iss.gif" alt="aswini" width="450" height="500" />
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <h1
+        style="font-size: 30px; font-family: monospace; margin-left: 50px;color: grey;"
+      >
+        ISS(International Space Station)
+      </h1>
+      <p
+        class="pfont"
+        style="font-size: 25px; font-family: monospace; margin-left: 50px;margin-right: 50px;color: grey;"
+      >
+        The International Space Station (ISS) is a space station (habitable
+        artificial satellite) in low Earth orbit. The ISS programme is a joint
+        project between five participating space agencies: NASA (United States),
+        Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada).The
+        ownership and use of the space station is established by
+        intergovernmental treaties and agreements.The ISS serves as a
+        microgravity and space environment research laboratory in which crew
+        members conduct experiments in biology, human biology, physics,
+        astronomy, meteorology, and other fields.The station is suited for the
+        testing of spacecraft systems and equipment required for missions to the
+        Moon and Mars.The ISS maintains an orbit with an average altitude of 400
+        kilometres (250 mi) by means of reboost manoeuvres using the engines of
+        the Zvezda module or visiting spacecraft.It circles the Earth in roughly
+        92 minutes and completes 15.5 orbits per day.
+      </p>
+      <br /><br />
+
+      <img
+        src="isscon.png"
+        alt="Nature"
+        class="responsive"
+        width="600"
+        height="400"
+        style="background: white;"
+      />
+      <div class="parent">
+        <div class="item1">
+          <P style="color: black; font: bold;">Structure</P>
+          <img src="iss4.jpg" style="text-align: bottom;" />
+        </div>
+        <div class="item2">
+          <h6>Structure ISS</h6>
+          <p class="pfont">
+            The ISS is a third generation[95] modular space station.[96] Modular
+            stations can allow modules to be added to or removed from the
+            existing structure, allowing greater flexibility.
+          </p>
+        </div>
+      </div>
+
+      <div class="parent2">
+        <div class="item3">
+          <h6>Gravitational time dilation around a black hole</h6>
+          <p class="pfont">
+            <br />
+            The first module of the ISS, Zarya, was launched on 20 November 1998
+            on an autonomous Russian Proton rocket. It provided propulsion,
+            attitude control, communications, electrical power, but lacked
+            long-term life support functions.
+          </p>
+        </div>
+        <div class="item4">
+          <P style="color: black; font: bold;">Around blackhole</P>
+
+          <img src="issk.jpg" />
+        </div>
+      </div>
+      <div class="videoWrapper">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/XBPjVzSoepo"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="#">
+          <i class="fa fa-instagram" style="font-size:48px;color:grey"></i></a
+        >&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">
+          <i class="fa fa-facebook" style="font-size:48px;color:grey"></i></a
+        >&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">
+          <i class="fa fa-twitter" style="font-size:48px;color:grey"></i></a
+        >&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </body>
+    <!-- partial -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
